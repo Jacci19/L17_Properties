@@ -1,4 +1,4 @@
-package sample;
+package F17_Properties;
 
 public class Person_OLD_bezProper {
     private String name = "John";

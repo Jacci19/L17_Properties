@@ -1,4 +1,4 @@
-package sample;
+package F17_Properties;
 
 import javafx.beans.property.*;
 

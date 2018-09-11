@@ -1,4 +1,4 @@
-package sample;
+package F17_Properties;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
