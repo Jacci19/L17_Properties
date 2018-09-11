@@ -1,14 +1,17 @@
 package sample;
 
+import javafx.beans.property.Property;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 public class Person {
-    private String name = "John";
 
-    public String getName() {
-        return name;
+    private StringProperty propertyTextField = new SimpleStringProperty(this, "nameProperty", "John Smith");
+
+    public StringProperty getPropertyTextField() {
+        return propertyTextField;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setPropertyTextField(StringProperty propertyTextField) {
+        this.propertyTextField = propertyTextField;
     }
-
 }

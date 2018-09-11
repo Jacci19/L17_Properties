@@ -19,14 +19,12 @@ public class PropertExampl_17_Contrl {
 
     @FXML
     public void initialize(){
-        nameTxtFld.setText(myPerson.getName());
-        nameLabel.setText(myPerson.getName());
+        nameTxtFld.textProperty().bindBidirectional(myPerson.getPropertyTextField());       //działa w obie strony, zmieniając jedno zmienia się też drugie
+        nameLabel.textProperty().bind(myPerson.getPropertyTextField());                 //działa w jedną stronę, label przyjmuje wartość propertisa ale nie na odwrót
     }
 
     @FXML
-    void onWriteBtnAction(ActionEvent event) {
-        nameLabel.setText(nameTxtFld.getText());
-        myPerson.setName(nameTxtFld.getText());
+    void onWriteBtnAction(ActionEvent event) {                                          //niepotrzebne
 
     }
 }
