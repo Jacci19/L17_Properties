@@ -6,7 +6,7 @@ import javafx.beans.property.*;
 public class BindingsExample {
 
     public static void main(String[] args) {
-        bindings();
+        bindings();                             //Różne operacje na bindingach
     }
 
     public static void bindings() {
